@@ -1,6 +1,6 @@
 
 const readline = require('readline')
-let numero = Math.floor(Math.random()* 100) + 1
+let numero = Math.floor(Math.random(100)* 200) + 1
 let numeroDeRodadas = 0
 let limiteMaximoDeRodadas = 10
 
@@ -13,7 +13,7 @@ console.log(`|=========================================|`)
 console.log(`|   Seja bem vindo Jogo de Adivinhação!   |`)
 console.log(`|=========================================|`)
 console.log()
-console.log(`--> Tente adivinhar o número entre 0 e 100:`)
+console.log(`--> Tente adivinhar o número entre 100 e 200:`)
 console.log()
 
 verificarResposta()
@@ -26,7 +26,7 @@ function verificarResposta(){
         
         console.log()
 
-        if(typeof(line) === 'number' && line > 0 && line < 100){
+        if(typeof(line) === 'number' && line > 100 && line < 200){
 
             numeroDeRodadas++
 
